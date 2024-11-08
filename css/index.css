@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Hero Section */
+
 .hero {
     background: #4CAF50;
     color: white;
@@ -60,7 +60,7 @@ body {
     ;
     
 }
-/* Sobre o Projeto e Funcionalidades */
+
 section {
     padding: 40px 20px;
 }
@@ -86,7 +86,7 @@ p {
 .learn-more .links {
     display: flex;
     justify-content: center;
-    gap: 400px; /* Aumenta o espaçamento entre os links */
+    gap: 400px;
     margin-top: 20px;
 }
 
@@ -149,7 +149,15 @@ p {
     text-align: left;
 }
 
-/* Contact Section */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p, .features p, .contact form {
+        font-size: 0.9em;
+    }
+}
 .sobre-mim {
     background: #333;
     color: white;
@@ -176,15 +184,4 @@ p {
     border-radius: 50%;
     margin-top: 20px;
     border: 3px solid #4CAF50;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p, .features p, .contact form {
-        font-size: 0.9em;
-    }
 }
